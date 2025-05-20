@@ -1,0 +1,151 @@
+/* homepage.css */
+
+/* Reset de estilos para garantir consistência */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", "Netflix Sans", sans-serif;
+    color: #fff;
+    background-image: linear-gradient(to bottom, #ffe6f0, #fa93bc);
+    /* Degradê suave de cima para baixo */
+    background-attachment: fixed;
+    /* Mantém o degradê fixo enquanto a página rola */
+    min-height: 100vh;
+    /* Garante que o degradê cubra toda a altura da viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+}
+
+header h1 {
+    color: #f48fb1;
+    font-size: 2.5rem;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+#germinaflix{
+    list-style: none;
+    text-decoration: none;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: f48fb1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(229, 9, 20, 0.2);
+    color: #ff93b7;
+}
+
+main {
+    background-color: rgb(49, 49, 49);
+    flex-grow: 1;
+    padding: 20px;
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+table {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+    color: #f48fb1;
+    font-weight: 500;
+}
+
+td {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+td:last-child {
+    border-bottom: none;
+}
+
+.titulo-filme {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+a {
+    color: #f06292;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #e91e63;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #f06292;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 4%;
+}

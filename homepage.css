@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+html{
+    background-image: linear-gradient(to bottom, #ffe6f0, #fa93bc);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #0000007e;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.profiles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 80%;
+    margin-bottom: 4rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.profile:hover {
+    transform: scale(1.05);
+}
+
+.profile-icon {
+    width: auto;
+    height: auto;
+    border-radius: 4px;
+    background-color: #333;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.profile-name {
+    color: grey;
+    font-size: 1.3rem;
+}
+
+.profile:hover .profile-name {
+    color: white;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    margin: 1rem 0;
+}
+
+.manage-profiles {
+    border: 1px solid grey;
+    color: grey;
+    background: transparent;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.manage-profiles:hover {
+    border-color: white;
+    color: white;
+}
